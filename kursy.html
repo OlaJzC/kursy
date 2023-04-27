@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kursy</title>
+    <script>
+        function przelicz()
+        {
+            var a=parseFloat(document.getElementById("kurs").value);
+            var b=parseFloat(document.getElementById("zł").value);
+            document.getElementById("wynik").innerHTML= a/b ;
+
+        }
+    </script>
+</head>
+<body>
+    <h1>Przeliczanie złotówek</h1>
+    <p>Kurs euro: <input type="text" id="kurs"></p>
+    <p>Ile złotówek: <input type="text" id="zł"></p>
+    <p>Po przeliczeniu <div id="wynik">...</div> euro.</p>
+    <button onclick="przelicz()">Przelicz</button>
+</body>
+</html>
